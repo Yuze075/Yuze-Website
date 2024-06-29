@@ -17,9 +17,9 @@ jobs :
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with :
-          ftp-server: 47.102.219.203
-          ftp-username: ${{ secrets.ftp_user }}
-          ftp-password: ${{ secrets.ftp_pwd }}
+          server: 47.102.219.203
+          username: yuze-website
+          password: ${{ secrets.ftp_pwd }}
           port: 21
           local-dir: build/
         env:
