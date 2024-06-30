@@ -15,7 +15,6 @@ sidebar_position: 2
 ### 组件介绍
 
 1. **Timeline Asset**
-    * 
 2. **Timeline Track**
 3. **Timeline Clip**
 4. **Timeline Player**
@@ -57,7 +56,7 @@ sidebar_position: 2
     * 并且每一个**Action**都可以配置一个`key`(字符串类型), 用于快速索引
     <details>
         <summary>方法名称</summary>
-        <div>
+
         * `Invoke(int index)`: 基于配置的顺序触发一个**Action**(配置的顺序从0开始)
         * `Invoke(string key)`: 基于配置的`key`触发一个**Action**
         * `InvokeWithCancellationToken(int index)`:  基于配置的顺序触发一个带有`CancellationToken`的**Action**(配置的顺序从0开始)(带有`CancellationToken`的**Action**可以取消执行)
@@ -67,7 +66,7 @@ sidebar_position: 2
                 2. 组合索引`key`: `XXXXX-YYYYY`, 将`XXXXX`作为查找**Action**的`key`, 将`YYYYY`作为取消**Action**操作的`key`
         * `Cancel(int index)`: 基于配置的顺序取消一个**Action**(配置的顺序从0开始)
         * `Cancel(string key)`: 基于配置的`key`取消一个**Action**或者一组**Action**(如果大量的**Action**绑定的是同一个取消`key`, 则会一次性取消一组)
-        </div>
+
     </details>
 4. **Action Group Invoker**
     * 是一个`MonoBehaviour`组件, 可以被直接添加到`GameObject`上
