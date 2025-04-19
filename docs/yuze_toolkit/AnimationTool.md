@@ -11,6 +11,8 @@ sidebar_position: 2
 ## Timeline Player
 
 * 基于时间轴的动画播放器, 可以使用Unity的`TimelineAsset`的动画面板配置时间轴动画
+* [Timeline Unity官方教程](https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html)
+  (在框架中部分遵循这个教程)
 
 ### 组件介绍
 
@@ -134,7 +136,7 @@ sidebar_position: 2
     * **Action**通常有两种类型:
         1. 等待类**Action**: 这种**Action**通常都需要等待一段时间才能完成
             1. `Delay`: 延迟一定秒数执行
-            2. `DelayFrame`: 延迟一定帧数执行(可以是`Update`, 也可以是`FixedUpdate`)
+            2. `DelayFrame`: 延迟一定帧数执行
         2. 立即执行类**Action**: 这种**Action**都是立刻完成, 并且返回(或者执行下一个**Action**)
             1. `UnityEvent`: **Inspector**可配置方法
     * 其他**Action**详细的类型说明请参考[Action](Action.md)
